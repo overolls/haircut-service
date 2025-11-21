@@ -1,6 +1,6 @@
-# csci410
+# CSCI410 - Mobile Application
 
-A new Flutter project. (Project 1)
+A new Flutter project. Haircut Estimator.
 
 ## Getting Started
 
