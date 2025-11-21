@@ -40,21 +40,23 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        title: const Text("Haircut Price Estimator"),
+        title: const Text("Haircut Cost and Time Estimator", style: TextStyle(color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
-        child: Column(
+
+        child:
+        Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
               "Select Main Service",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 10),
-
+            Image.asset('assets/haircuts.jpg', width: 250, height: 250)
+            ,const SizedBox(height: 10),
             DropdownButtonFormField(
               initialValue: selectedService,
               hint: const Text("Choose a service"),
@@ -66,6 +68,7 @@ class _HomePageState extends State<HomePage> {
                 DropdownMenuItem(
                     value: "Full Service",
                     child: Text("Full Service — \$15")),
+
               ],
               onChanged: (value) {
                 setState(() {
@@ -74,6 +77,7 @@ class _HomePageState extends State<HomePage> {
                   if (value == "Full Service") {
                     styling = false;
                     faceMask = false;
+
                   }
                 });
               },
@@ -130,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     Text(
-                      "Total Price: \$${totalPrice}",
+                      "Total Price: \$$totalPrice",
                       style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
