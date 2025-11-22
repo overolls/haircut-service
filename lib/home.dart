@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-    void resetSelections() {
+  void resetSelections() {
     setState(() {
       selectedService = null;
       styling = false;
@@ -69,20 +69,31 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(20),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Text(
-                    "Select Main Service",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+
+                  const Center(
+                    child: Text(
+                      "Select Main Service",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
                   ),
 
-                  Image.asset('assets/assets/haircuts.jpg',
-                      width: 250, height: 250),
+                  const SizedBox(height: 10),
+
+
+                  Center(
+                    child: Image.asset(
+                      'assets/assets/haircuts.jpg',
+                      width: 200,
+                      height: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
 
                   const SizedBox(height: 10),
 
