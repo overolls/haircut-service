@@ -3,10 +3,10 @@
 
 
 class Pricing {
-  static Map<String, int> _servicePrices = { "Haircut": 10, "Beard": 5, "Full Service": 15,
+  static final Map<String, int> _servicePrices = { "Haircut": 10, "Beard": 5, "Full Service": 15,
 };
 
-  static Map<String, int> _serviceTimes = {
+  static final Map<String, int> _serviceTimes = {
     "Haircut": 20,
     "Beard": 10,
     "Full Service": 30,
