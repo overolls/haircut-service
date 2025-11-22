@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
 
-                  Image.asset('assets/haircuts.jpg',
+                  Image.asset('assets/assets/haircuts.jpg',
                       width: 250, height: 250),
 
                   const SizedBox(height: 10),
