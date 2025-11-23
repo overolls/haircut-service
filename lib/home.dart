@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
 
                   Center(
                     child: Image.asset(
-                      'assets/assets/haircuts.jpg',
+                      'images/haircuts.jpg',
                       width: 200,
                       height: 200,
                       fit: BoxFit.cover,
