@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
 
 
                   DropdownButtonFormField(
-                    value: selectedService,
+                    initialValue: selectedService,
                     hint: const Text("Choose a service"),
                     items: const [
                       DropdownMenuItem(
