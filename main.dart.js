@@ -35594,7 +35594,7 @@ q=0}if(n!=="Full Service"){if(m){p+=5
 q+=5}if(l){p+=5
 q+=7}}o.ao(new A.a7y(o,A.aC(["price",p,"time",q],t.N,t.S)))},
 aah(){this.ao(new A.a7z(this))},
-N(a){var s,r,q,p=this,o=null,n=p.d,m=n!=="Full Service",l=A.rv(new A.u_(A.asS(o,o,new A.rd("assets/assets/haircuts.jpg",o,o)),200,200,B.xE,o),o,o)
+N(a){var s,r,q,p=this,o=null,n=p.d,m=n!=="Full Service",l=A.rv(new A.u_(A.asS(o,o,new A.rd("images/haircuts.jpg",o,o)),200,200,B.xE,o),o,o)
 n=A.aq5(B.NY,B.DG,new A.a7v(p),n,t.N)
 s=p.e
 s=A.ajk(m?new A.a7w(p):o,B.NP,s)
